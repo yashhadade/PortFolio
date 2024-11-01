@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --yello-theme-background-color:#1d1d1d;
+    --yello-theme-main-color:#ffdd40;
+    --yello-theme-sub-text-color:#ffffff;
+    --yello-theme-nav-bacgound-color:#181818;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html{
+    font: size 62.5%;
+    height: 100%;
+}
+body{
+    background-color: var(--yello-theme-background-color);
+    height: 100%;
+
+}
+#root{
+    height: 100%;
+}
