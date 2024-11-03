@@ -1,6 +1,7 @@
 import React from 'react'
 import { Line } from 'rc-progress'
-import {BsInfoCircleFill} from 'react-icons/bs'
+import { GiSkills } from "react-icons/gi";
+
 import PageHeaderContent from '../../components/pageHeaderContainer'
 import { skillData } from './utils'
 import { Animate, AnimateKeyframes } from 'react-simple-animate'
@@ -12,7 +13,7 @@ const Skill = () => {
     <section id='skill' className='skill'>
     <PageHeaderContent
     headerText="My Skill"
-    icon={<BsInfoCircleFill size={40}/>}
+    icon={<GiSkills size={40}/>}
     />
     <div className="skill_content-wrapper">
       {
