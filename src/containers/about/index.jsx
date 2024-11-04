@@ -23,6 +23,22 @@ const personalDetails = [
     label: "Email",
     value: "yashhadade613@gmail.com"
   },
+  {
+    label: "GitHub",
+    value: "yashhadade"
+  },
+  {
+    label: "Linkedin",
+    value: "Yash Hadade"
+  },
+  {
+    label: "Twitter",
+    value: "yaashh04"
+  },
+  {
+    label: "Instagram",
+    value: "yashh.04"
+  },
   // {
   //   label:"Phone",
   //   value:"+91 7900103177"
