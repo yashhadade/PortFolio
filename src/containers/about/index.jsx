@@ -6,38 +6,47 @@ import { FaJs } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { FaReact, FaJava, FaGithubSquare } from "react-icons/fa";
 import './styles.scss'
+import { link } from 'framer-motion/client';
 const personalDetails = [
   {
     label: "Name",
-    value: "Yash Pravin Hadade"
+    value: "Yash Pravin Hadade",
+     link:""
   },
   {
     label: "Age",
-    value: "22"
+    value: "22",
+     link:""
   },
   {
     label: "Address",
-    value: "Mumbai, India"
+    value: "Mumbai, India",
+     link:""
   },
   {
     label: "Email",
-    value: "yashhadade613@gmail.com"
+    value: "yashhadade613@gmail.com",
+    link:""
   },
   {
     label: "GitHub",
-    value: "yashhadade"
+    value: "yashhadade",
+    link:"https://github.com/yashhadade"
   },
   {
     label: "Linkedin",
-    value: "Yash Hadade"
+    value: "Yash Hadade",
+     link:"https://www.linkedin.com/in/yash-hadade-39227b209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
     label: "Twitter",
-    value: "yaashh04"
+    value: "yaashh04",
+     link:"https://x.com/yaashh04?t=TUuZblxURbd06stctg4pHw&s=08"
   },
   {
     label: "Instagram",
-    value: "yashh.04"
+    value: "yashh.04",
+     link:"https://www.instagram.com/yashh.04?igsh=ejQ3eXRzb3Juc3F3"
   },
   // {
   //   label:"Phone",
@@ -88,8 +97,10 @@ const About = () => {
               {
                 personalDetails.map((item, index) => (
                   <li key={index}>
+                    <a href={item.link}>
                     <span className='title'>{item.label}:</span>
                     <span className='value'>{item.value}</span>
+                    </a>
                   </li>
                 ))
               }
