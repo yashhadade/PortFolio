@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: -1;
+   
     &_text-wrapper{
         display: flex;
         justify-content: center;
@@ -37,6 +37,7 @@
            border: 1.5px solid var(--yello-theme-main-color);
            border-radius: 4px;
            font-weight: 500;
+           z-index: 8;
 
            &:hover{
             background-color: var(--yello-theme-main-color);

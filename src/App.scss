@@ -1,6 +1,8 @@
 .App{
+    
     height: 100%;
     &_main_page_content{
+        padding-top:90px;
         height:(calc(100% -  80px));
     }
 }
