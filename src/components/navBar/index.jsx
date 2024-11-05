@@ -30,6 +30,9 @@ const data = [
   },
 ];
 
+
+
+
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
 

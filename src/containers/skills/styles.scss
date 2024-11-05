@@ -1,4 +1,6 @@
 .skill{
+    z-index: -1;
+    position: relative;
     &_content-wrapper{
         display: flex;
         padding: 20px;

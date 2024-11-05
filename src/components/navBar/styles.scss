@@ -6,7 +6,7 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-
+   
     &__container{
         display: flex;
         align-items: center;
@@ -58,6 +58,7 @@
 }
 
 @media only screen and (max-width : 768px){
+   
     .navbar__container__menu{
         display: flex;
         flex-direction: column;
@@ -68,7 +69,7 @@
         left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
-
+        z-index: 1000;
         &.active{
             background: #181818;
             left: 0px;
@@ -87,5 +88,6 @@
         cursor: pointer;
         color: var(--yello-theme-main-color);
         padding-right: 20px;
+        z-index: 10;
     }
 }

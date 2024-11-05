@@ -39,8 +39,8 @@ const Skill = () => {
                   duration={1}
                   keyframes={["opacity:1", "opacity:0"]}
                   iterationCount="1"
-                  >
-                    <div className='progressbar-wrapper' key={index}>
+                  key={index}>
+                    <div className='progressbar-wrapper'>
                         <p>{skillItem.skillName}</p>
                         <Line 
                         percent={skillItem.percentage}

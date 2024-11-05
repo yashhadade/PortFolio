@@ -1,4 +1,6 @@
 .about{
+    z-index: -1;
+    position: relative; ;
     &_content{
         display: flex;
         gap: 20px;
@@ -95,6 +97,7 @@
 }
 @media only screen and (max-width:768px) {
     .about_content{
+        
         flex-direction: column;
 
         &_personalWrapper,&_serviseWrapper{
