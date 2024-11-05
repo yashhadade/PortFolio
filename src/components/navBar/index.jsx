@@ -54,7 +54,7 @@ const Navbar = () => {
             <li key={key} className="navbar__container__menu__item">
               <Link
                 className="navbar__container__menu__item__links"
-                to={item.to}
+                to={item.to} onClick={handleToggleIcon}
               >
                 {item.label}
               </Link>
