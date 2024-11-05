@@ -26,7 +26,7 @@ const personalDetails = [
   {
     label: "Email",
     value: "yashhadade613@gmail.com",
-    link:""
+    link:"mailto:yashhadade613@gmail.com"
   },
   {
     label: "GitHub",
