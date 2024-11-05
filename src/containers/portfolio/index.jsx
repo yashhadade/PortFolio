@@ -1,14 +1,12 @@
 import React from "react";
 import PageHeaderContent from '../../components/pageHeaderContainer'
 import { BsDistributeVertical } from "react-icons/bs"
-import ImageOne from "../../images/image1.jpg";
-import ImageTwo from "../../images/image2.jpg";
+
 import ImageThree from "../../images/image3.png";
 import ImageFour from "../../images/image4.png";
 import ImageFive from "../../images/image5.jpg";
 import "./styles.scss";
 import { useState } from "react";
-
 const portfolioData = [
   
   {
@@ -21,7 +19,6 @@ const portfolioData = [
     id: 2,
     name: "Todo App",
     image: ImageFour,
-
     link: "https://github.com/yashhadade/toDoReactApp.git",
   },
   {
@@ -31,7 +28,6 @@ const portfolioData = [
     link: "https://github.com/yashhadade/keeperApp.git",
   },
 ];
-
 const filterData = [
   {
     filterId: 1,
@@ -46,30 +42,23 @@ const filterData = [
   //   label: "Design",
   // },
 ];
-
 const Portfolio = () => {
   const [filteredvalue, setFilteredValue] = useState(1);
   const [hoveredValue, setHoveredValue] = useState(null);
-
   function handleFilter(currentId) {
     setFilteredValue(currentId);
   }
-
   function handleHover(index) {
     setHoveredValue(index);
   }
-
   console.log("====================================");
   console.log(hoveredValue);
   console.log("====================================");
-
   const filteredItems =
     filteredvalue === 1
       ? portfolioData
       : portfolioData.filter((item) => item.id === filteredvalue);
-
   console.log(filteredItems);
-
   return (
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
