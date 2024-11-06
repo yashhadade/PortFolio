@@ -5,7 +5,7 @@ import {Animate} from 'react-simple-animate'
 import About from '../about'
 import Skill from '../skills'
 import Resume from '../resume'
-import Portfolio from '../portfolio'
+import resume from '../../assets/Yash_Pravin_Hadade_Resume.pdf'
 const Home = () => {
   const navigate = useNavigate()
   const handleNavigateToContactMe=()=>{
@@ -35,6 +35,11 @@ const Home = () => {
       >
       <div className='home_contact-me'>
          <button onClick={handleNavigateToContactMe}>Hire Me</button>
+         <a href={resume} download='resume'>
+          <button>
+         Resume
+          </button>
+           </a>
       </div>
       </Animate>
     </section>
