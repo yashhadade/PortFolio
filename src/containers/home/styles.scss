@@ -1,17 +1,19 @@
-.home{
+.home {
     position: relative;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   height: 100vh;
-    &_text-wrapper{
+    height: 100vh;
+
+    &_text-wrapper {
         display: flex;
         justify-content: center;
-        align-content:center ;
+        align-content: center;
         flex-direction: column;
-        h1{
+
+        h1 {
             color: var(--yello-theme-main-color);
             margin: 0;
             font-weight: 500;
@@ -19,67 +21,83 @@
             line-height: 7rem;
             position: relative;
             overflow: hidden;
-            white-space:nowrap;
-            animation:typingEffectAnimation 2.5s steps(30,end);
+            white-space: nowrap;
+            animation: typingEffectAnimation 2.5s steps(30, end);
         }
     }
-    &_contact-me{
+
+    &_contact-me {
         margin-top: 15px;
         display: flex;
         justify-content: center;
 
-        button{
+        button {
             cursor: pointer;
             padding: 10px 70px;
-           font-size: 2rem;
-           background: transparent;
-           color: var(--yello-theme-main-color);
-           border: 1.5px solid var(--yello-theme-main-color);
-           border-radius: 4px;
-           font-weight: 500;
-           z-index: 8;
+            font-size: 2rem;
+            background: transparent;
+            color: var(--yello-theme-main-color);
+            border: 1.5px solid var(--yello-theme-main-color);
+            border-radius: 4px;
+            font-weight: 500;
+            z-index: 8;
             margin-left: 20px;
-           &:hover{
-            background-color: var(--yello-theme-main-color);
-            color:#000000 ;
-           }
+
+            &:hover {
+                background-color: var(--yello-theme-main-color);
+                color: #000000;
+            }
         }
     }
 
 }
-@media only screen and (max-width:550px){
-    
-    .home_text-wrapper h1{
+
+@media only screen and (max-width:550px) {
+
+    .home_text-wrapper h1 {
         font-size: 2.5rem;
         line-height: 4rem;
     }
-    .home_contact-me{
-        button{
-            padding: 5px 40rem;
-            font-size: 1.3rem;
+
+    .home_contact-me {
+        button {
+            cursor: pointer;
+            padding: 5px 30px;
+            font-size: 1.5rem;
+            background: transparent;
+            background-color: transparent;
+            color: var(--yello-theme-main-color);
+            border: 1.5px solid var(--yello-theme-main-color);
+            border-radius: 4px;
+            font-weight: 500;
+            z-index: 8;
+            margin-left: 20px;
         }
     }
 }
-@media only screen and (min-width:551px)and (max-width:768px){
-    .home_text-wrapper h1{
+
+@media only screen and (min-width:551px)and (max-width:768px) {
+    .home_text-wrapper h1 {
         font-size: 3rem;
         line-height: 5rem;
     }
 }
-@media only screen and (min-width:769px)and (max-width:990px){
-    
 
-    .home_text-wrapper h1{
+@media only screen and (min-width:769px)and (max-width:990px) {
+
+
+    .home_text-wrapper h1 {
         font-size: 4rem;
         line-height: 6rem;
     }
 }
 
-@keyframes typingEffectAnimation{
-    from{
+@keyframes typingEffectAnimation {
+    from {
         width: 0;
     }
-    to{
+
+    to {
         width: 100%;
     }
 }
