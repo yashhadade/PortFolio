@@ -50,10 +50,15 @@
 @media only screen and (max-width:550px){
     
     .home_text-wrapper h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 4rem;
     }
-
+    .home_contact-me{
+        button{
+            padding: 5px 40rem;
+            font-size: 1.3rem;
+        }
+    }
 }
 @media only screen and (min-width:551px)and (max-width:768px){
     .home_text-wrapper h1{
