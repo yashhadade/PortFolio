@@ -5,7 +5,7 @@ import {Animate} from 'react-simple-animate'
 import About from '../about'
 import Skill from '../skills'
 import Resume from '../resume'
-import resume from '../../assets/Yash_Pravin_Hadade_Resume.pdf'
+import resume from '../../assets/Yash_Hadade_resume.pdf'
 const Home = () => {
   const navigate = useNavigate()
   const handleNavigateToContactMe=()=>{
