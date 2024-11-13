@@ -4,6 +4,7 @@ import PageHeaderContent from '../../components/pageHeaderContainer'
 import { Animate } from 'react-simple-animate';
 import { FaJs } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact, FaJava, FaGithubSquare } from "react-icons/fa";
 import './styles.scss'
 import { link } from 'framer-motion/client';
@@ -126,6 +127,7 @@ const About = () => {
             <div> <FaReact size={60} color='var(--yello-theme-main-color)' /></div>
             <div> <FaJava size={60} color='var(--yello-theme-main-color)' /></div>
             <div>< FaGithubSquare size={60} color='var(--yello-theme-main-color)' /></div>
+            <div><RiTailwindCssFill size={60} color='var(--yello-theme-main-color)'/></div>
            
           </div>
           </Animate>
