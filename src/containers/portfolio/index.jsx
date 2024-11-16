@@ -5,6 +5,7 @@ import { BsDistributeVertical } from "react-icons/bs"
 import ImageThree from "../../images/image3.png";
 import ImageFour from "../../images/image4.png";
 import ImageFive from "../../images/image5.jpg";
+import ImageSix from "../../images/image6.png"
 import "./styles.scss";
 import { useState } from "react";
 const portfolioData = [
@@ -27,6 +28,12 @@ const portfolioData = [
     image: ImageFive,
     link: "https://github.com/yashhadade/keeperApp.git",
   },
+  {
+    id:4,
+    name:"GYM Web Page",
+    image:ImageSix,
+    link:"https://github.com/yashhadade/gymlandingPage.git"
+  }
 ];
 const filterData = [
   {
@@ -94,7 +101,7 @@ const Portfolio = () => {
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button>Visit</button>
+                    <a href={item.link}><button>Visit</button></a>
                   </div>
                 )}
               </div>
