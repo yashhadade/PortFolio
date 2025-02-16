@@ -3,9 +3,11 @@ import { BsInfoCircleFill } from 'react-icons/bs'
 import PageHeaderContent from '../../components/pageHeaderContainer'
 import { Animate } from 'react-simple-animate';
 import { FaJs } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaReact, FaJava, FaGithubSquare } from "react-icons/fa";
+import { SiMysql,SiTypescript,SiExpress  } from "react-icons/si";
+import { RiTailwindCssFill,RiNextjsFill  } from "react-icons/ri";
+import { FaReact, FaJava, FaGithubSquare,FaNodeJs  } from "react-icons/fa";
+import { BiLogoMongodb ,BiLogoPostgresql } from "react-icons/bi";
+// import { SiTypescript } from "react-icons/si";
 import './styles.scss'
 import { link } from 'framer-motion/client';
 const personalDetails = [
@@ -122,13 +124,20 @@ const About = () => {
           >
           <div className='about_content_serviseWrapper_innerContent'>
          
-            <div> <FaJs size={60} color='var(--yello-theme-main-color)' /></div>
-            <div> <SiMysql size={60} color='var(--yello-theme-main-color)' /></div>
-            <div> <FaReact size={60} color='var(--yello-theme-main-color)' /></div>
-            <div> <FaJava size={60} color='var(--yello-theme-main-color)' /></div>
-            <div>< FaGithubSquare size={60} color='var(--yello-theme-main-color)' /></div>
-            <div><RiTailwindCssFill size={60} color='var(--yello-theme-main-color)'/></div>
-           
+            <div> <FaJs size={50} color='var(--yello-theme-main-color)' /></div>
+            <div> <SiMysql size={50} color='var(--yello-theme-main-color)' /></div>
+            <div> <FaReact size={50} color='var(--yello-theme-main-color)' /></div>
+            <div> <FaJava size={50} color='var(--yello-theme-main-color)' /></div>
+            <div>< FaGithubSquare size={50} color='var(--yello-theme-main-color)' /></div>
+            <div><RiTailwindCssFill size={50} color='var(--yello-theme-main-color)'/></div>
+            <div><FaNodeJs size={50} color='var(--yello-theme-main-color)'/></div>
+            <div><BiLogoMongodb size={50} color='var(--yello-theme-main-color)'/></div>
+            <div><BiLogoPostgresql  size={50} color='var(--yello-theme-main-color)'/></div>
+            <div><RiNextjsFill  size={50} color='var(--yello-theme-main-color)'/></div>
+            <div><SiTypescript  size={40} color='var(--yello-theme-main-color)'/></div>
+            <div><SiExpress  size={40} color='var(--yello-theme-main-color)'/></div>
+
+            {/*    */}
           </div>
           </Animate>
         </div>
