@@ -6,6 +6,8 @@ import About from '../about'
 import Skill from '../skills'
 import Resume from '../resume'
 import resume from '../../assets/Yash_Hadade_resume.pdf'
+import Portfolio from '../portfolio'
+import Contact from '../contact'
 const Home = () => {
   const navigate = useNavigate()
   const handleNavigateToContactMe=()=>{
@@ -46,6 +48,8 @@ const Home = () => {
      <About/>
      <Skill/>
      <Resume/>
+     <Portfolio/>
+     <Contact/>
     </>
   )
 }

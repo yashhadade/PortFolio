@@ -10,7 +10,13 @@ export const data ={
             title:"Frontend Developer",
             subtitle:"Ismart Facitech PVT",
             description:"Worked For Raymand Client Inscpection shaduling",
-            duration:"Aug 2024 - Present",
+            duration:"Aug 2024 - Nov 2024",
+        },
+        {
+            title:"Full Stack Developer",
+            subtitle:"realX",
+            description: "Redesigned core modules including Deals, Profile, and Admin pages using React.js and Material UI, enhancing user experience and data visibility. Optimized backend APIs for performance, implemented a Commission module to manage and track lead-based incentives. Resolved a major platform bug that displayed hidden properties, improving data accuracy and platform trust.",
+            duration:"Dec 2024 - Present",
         }
     ],
     eduction:[

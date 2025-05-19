@@ -6,6 +6,7 @@ import ImageThree from "../../images/image3.png";
 import ImageFour from "../../images/image4.png";
 import ImageFive from "../../images/image5.jpg";
 import ImageSix from "../../images/image6.png"
+import ImageSeven from "../../images/image7.png"
 import "./styles.scss";
 import { useState } from "react";
 const portfolioData = [
@@ -33,6 +34,12 @@ const portfolioData = [
     name:"GYM Web Page",
     image:ImageSix,
     link:"https://github.com/yashhadade/gymlandingPage.git"
+  },
+  {
+    id:5,
+    name:"Excalidraw",
+    image:ImageSeven,
+    link:"https://github.com/yashhadade/Excalidraw.git"
   }
 ];
 const filterData = [

@@ -72,4 +72,30 @@ export const skillData = [
 
         ]
     },
+    {
+        label: "OTHER",
+        data: [
+            {
+                skillName: "Docker",
+                percentage: "40",
+            },
+            {
+                skillName:"Redis",
+                percentage:"50",
+            },
+            {
+                skillName:"REST API",
+                percentage:"60"
+            },
+            {
+                skillName:"JWT Auth",
+                percentage:"80"
+            },
+            {
+                skillName:"Websockets",
+                percentage:"45"
+            }
+
+        ]
+    }
 ]

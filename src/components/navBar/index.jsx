@@ -1,33 +1,15 @@
 import React, { useState } from "react";
 import { FaBars, FaReact } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./styles.scss";
 const data = [
-  {
-    label: "HOME",
-    to: "/",
-  },
-  {
-    label: "ABOUT ME",
-    to: "/about",
-  },
-  {
-    label: "SKILLS",
-    to: "/skill",
-  },
-  {
-    label: "RESUME",
-    to: "/resume",
-  },
-  {
-    label: "PORTFOLIO",
-    to: "/portfolio",
-  },
-  {
-    label: "CONTACT",
-    to: "/contact",
-  },
+  { label: "HOME", to: "home" },
+  { label: "ABOUT ME", to: "about" },
+  { label: "SKILLS", to: "skill" },
+  { label: "RESUME", to: "resume" },
+  { label: "PORTFOLIO", to: "portfolio" },
+  { label: "CONTACT", to: "contact" },
 ];
 
 
@@ -35,16 +17,32 @@ const data = [
 
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
+
+  const handleNavigation = (target) => {
+    if (location.pathname === "/") {
+      const el = document.getElementById(target);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate("/", { state: { scrollTo: target } });
+    }
+    handleToggleIcon();
+  };
+
   return (
     <div>
       <nav className="navbar">
         <div className="navbar__container">
           <Link to={"/"} className="navbar__container__logo">
-            <FaReact size={30} />
+          <span className="navbar__container__initials">YH</span>
+            {/* <FaReact size={30} /> */}
           </Link>
         </div>
         <ul
@@ -54,7 +52,7 @@ const Navbar = () => {
             <li key={key} className="navbar__container__menu__item">
               <Link
                 className="navbar__container__menu__item__links"
-                to={item.to} onClick={handleToggleIcon}
+                onClick={() => handleNavigation(item.to)}
               >
                 {item.label}
               </Link>
